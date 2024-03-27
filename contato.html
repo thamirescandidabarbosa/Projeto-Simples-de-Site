@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-image: url('https://i.pinimg.com/originals/9c/7b/e4/9c7be43979a736a8695361a544630b97.jpg');
+            background-size: cover;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        footer {
+            clear: both;
+            background-color: #001147;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 5fr 4fr;
+            grid-gap: 10px; /* Espaçamento entre as colunas e as linhas */
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align:left ;border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+        }
+
+        .location-signs {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+        }
+
+        
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        button {
+            font-size: 17px;
+            padding: 0.5em 2em;
+            border: transparent;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            background: rgb(246, 247, 247);
+            color: rgb(2,0,36);
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: rgb(190, 190, 201);
+            background: linear-gradient(90deg, rgb(53, 136, 245) 0%, rgba(53,136,245) 100%);
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">&#8592; Voltar para o Início</a>
+        <h1>Contato</h1>
+    </header>
+
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Localização</h2>
+                <div class="location-signs">
+                    <p>
+                    Avenida São Paulo, N° 1960 - Osasco<br>
+                    Oscaso São Paulo/BR - CEP: 09876-001
+                    </p>
+                </div>
+                <br>
+
+                <div class="social-icons">
+                    <h2>Siga-nos</h2>
+                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <br>
+                    <p>&copy; °2024 Política de Privacidade.</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <h2>Nosso Contato</h2>
+                <div class="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
